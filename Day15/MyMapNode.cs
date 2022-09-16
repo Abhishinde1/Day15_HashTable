@@ -53,6 +53,18 @@ namespace Day15
             KeyValue<K, V> item = new KeyValue<K, V>() { Key = key, Value = value };
             linkedlist.AddLast(item);
         }
+        public bool IsEmpty()
+        {
+            if (Getsize() <= 0)
+                return true;
+            else
+                return false;
+        }
+        public int Getsize()
+        {
+            return size;
+        }
+
 
         public struct KeyValue<k, v>
         {
